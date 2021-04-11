@@ -1,0 +1,36 @@
+### Maven ###
+/target/
+
+### Gradle ###
+/bin/
+/.gradle/
+/build/
+
+### MacOS ###
+.DS_Store
+
+### Misc ###
+*.lock
+*.log
+
+### Eclipse/STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+/.idea/
+*.iws
+*.iml
+*.ipr
+
+### Theia ###
+/.theia/
+.classpath
+.factorypath
+.project
+.settings
