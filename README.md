@@ -3,9 +3,10 @@
 You most likely frustrated when you work with Java and try to code on the fly. When you change a method body the
 JVM hotswap works well, but if you change the structure of your class you get the error message as the hotswap failed.
 Standard JVM unfortunately has limited hotswap capability.
-There is couple solution to improve this like JRebel, SpringLoaded and HotSwap Project with DCEVM.
-I will introduce HotSwap Project with DCEVM to you as Spring Loaded fails many times and not really maintained any more.
-JRebel it works on any standard VM other hand you need some plugin and magic to integrate to your IDE, further more it is expensive.
+There is couple of solution to improve this situation, like JRebel, Spring Loaded, and HotSwap Project with DCEVM.
+This manual introduct the HotSwap Project with DCEVM.
+Spring Loaded fails many times and not really maintained any more.
+JRebel works on any standard VM, other hand you need some plugin for your IDE and magic to integrate with it. Further more it is expensive.
 
 HotSwap Project with DCEVM need no more configuration or IDE plugin then chose the right VM and execute with `-XX:HotswapAgent=` argument.
 
@@ -29,9 +30,9 @@ Quoted from the project [website](http://hotswapagent.org/index.html)
 ## Framework compatibility
 
 DCEVM provide the additional hotswap capabilities to the JVM, but that would not help you with the frameworks having internal state like injected beans and other configurations.
-The HotSwapAgent do this job, it comes with many plugins for framework support and you can also extend it with your custom plugin if you need.
+The HotSwapAgent do this job, it comes with many plugins for support of different frameworks. You can also extend it with your custom plugin if it is needed.
 
-Many plugins already exists and packaged into DCEVM from Spring, Hibernate, Vaadin, Weld, Tomcat, Undertow, Jetty, Jersey, Log4j, etc.
+Many plugins already exists and packaged into DCEVM like Spring, Hibernate, Vaadin, Weld, Tomcat, Undertow, Jetty, Jersey, Log4j, etc.
 
 Take a look on the [website](http://hotswapagent.org/index.html) for the existing plugins.
 
@@ -45,4 +46,4 @@ Generaly speaking you do not need any IDE plugins for make the magic happen.
 
 [IntelliJ Idea](./IDEs/IntelliJ/README.md)
 
-Note: You can find configuration HOWTOs on the project [website](http://hotswapagent.org/index.html) may different than in this manual.
+Note: You can find configuration HOWTOs on the project [website](http://hotswapagent.org/index.html), may different than in this manual.

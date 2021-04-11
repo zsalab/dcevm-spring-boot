@@ -20,7 +20,7 @@ Start a debug session for the sample application, than open the `HelloController
 
 ![Original code](./OriginalCode.png)
 
-When you rename the `index()` method to for example `newIndex()` you will see this error:
+When you rename the `index()` method to for example `newIndex()` and save the file you will see this error:
 
 ![Rename method problem](./RenameMethodProblem.png)
 
@@ -35,6 +35,9 @@ really inefficient way of working especially if you have 5-20 sec startup time.
 Stop the debug session and....
 
 ## Try DCEVM
+
+Install DCEVM to your computer if you have not done yet.
+[https://github.com/TravaOpenJDK/trava-jdk-11-dcevm/releases](https://github.com/TravaOpenJDK/trava-jdk-11-dcevm/releases)
 
 We just have to change the project runtime VM configuration and add the `-XX:HotswapAgent=` VM argument for the launch config.
 
@@ -60,7 +63,7 @@ We can change the code now...
 
 ![Modified code](./ModifiedCode.png)
 
-No complain about the unsupported hotswap operation and you will see, as you have saved the source the hotswap agent do some magic.
+No complain about the unsupported hotswap operation after save the file. You will see in the terminal window the hotswap agent did some magic.
 
 ![Hot code replacement](./HotCodeReplacement.png)
 

@@ -12,7 +12,7 @@ We should check our Java configuration, make sure OpenJDK is the project SDK.
 
 ![Select SDK OpenJDK](./SelectSDK-OpenJDK.png)
 
-We should enable auto build and hotswap as both disabled in Idea by default.
+We should make sure the auto build and code hotswap both enabled.
 
 ![Enable autobuild](./EnableAutoBuild.png)
 
@@ -26,7 +26,7 @@ Start a debug session for the sample application, than open the `HelloController
 
 ![Original code](./OriginalCode.png)
 
-When you rename the `index()` method to for example `newIndex()` you will see this error:
+When you rename the `index()` method to for example `newIndex()` and save the file you will see this error:
 _(Remember: you may build manually if your Idea does not support autobuild)_
 
 ![Rename method problem](./RenameMethodProblem.png)
@@ -44,7 +44,10 @@ Stop the debug session and....
 
 ## Try DCEVM
 
-We just have to change the project runtime VM configuration and add the `-XX:HotswapAgent=` VM argument for the launch config.
+Install DCEVM to your computer if you have not done yet.
+[https://github.com/TravaOpenJDK/trava-jdk-11-dcevm/releases](https://github.com/TravaOpenJDK/trava-jdk-11-dcevm/releases)
+
+We just have to change the project runtime VM and add the `-XX:HotswapAgent=` VM argument for the launch config.
 
 Add DCEVM as a new SDK
 
@@ -68,7 +71,7 @@ We can change the code now...
 
 ![Modified code](./ModifiedCode.png)
 
-No complain about the unsupported hotswap operation and you will see, as you have saved the source the hotswap agent do some magic.
+No complain about the unsupported hotswap operation after save the file. You will see in the terminal window the hotswap agent did some magic.
 
 ![Hot code replacement](./HotCodeReplacement.png)
 
