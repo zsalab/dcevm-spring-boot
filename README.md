@@ -40,9 +40,9 @@ Take a look on the [website](http://hotswapagent.org/index.html) for the existin
 
 Generaly speaking you do not need any IDE plugins for make the magic happen.
 
-[Visual Studio Code / Theia](./IDEs/TheiaVSC/README.md)
+[Theia / Visual Studio Code](./IDEs/TheiaVSC/README.md)
 
-[Eclipse](./IDEs/Eclipse/README.md)
+[Eclipse / Spring Tool Suite](./IDEs/Eclipse/README.md)
 
 [IntelliJ Idea](./IDEs/IntelliJ/README.md)
 

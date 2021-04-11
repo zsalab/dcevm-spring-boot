@@ -1,4 +1,4 @@
-# Theia, Visual Studio Code
+# Theia / Visual Studio Code
 
 ## Review the problem
 
